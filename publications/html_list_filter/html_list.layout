@@ -1,0 +1,14 @@
+<div class="clearfix float-my-children">
+<img src="\format[HTMLChars]{\comment}" alt="Test" align="left"  height="100" width="150">
+<div>
+\begin{url}<a href=\format{\url}>\end{url}
+\begin{title}\format[HTMLChars]{\title}\end{title}
+</a>
+<br>
+\begin{author}\format[AuthorLastFirstAbbreviator,AuthorFirstFirst,AuthorAndsCommaReplacer,HTMLChars]{\author}\end{author}<br>
+\begin{journal}<i>\format[HTMLChars]{\journal}</i>\end{journal}
+\begin{booktitle}<i>\format[HTMLChars]{\booktitle}</i>\end{booktitle}
+\begin{year}\year\end{year}<br>
+</div>
+</div>
+<br>

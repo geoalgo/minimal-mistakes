@@ -1,0 +1,92 @@
+---
+layout: archive
+author_profile: true
+title: Code
+---
+
+
+<h3>
+	Gudhi's library : Skeleton-blockers simplicial complex data-structure and simplification
+</h3>
+	<div>
+	These two packages are based on a 2011 SoCG paper. One implements a light data-structure to represent simplicial complexes of arbitrary dimension. The other proposes an efficient code for simplification operators such as edge collapse (in the 3D case, it is around 65% times faster for simplifying random two dimensional spheres with n points than CGAL).
+
+  <ul>
+      <li><h4>
+		Language: c++11
+      </h4></li>
+	  <li><h4>
+		Source code : 
+		<a href="http://gudhi.gforge.inria.fr/doc/1.3.0/">Gudhi webpage.</a>
+      </h4></li>
+  </ul>
+</div>
+
+
+<h3>
+	Gudhi's library : User interface
+</h3>
+
+	<div>
+	This package is a user interface that illustrates some of the Gudhi's functionnalities. You can load point clouds, build simplicial complexes, simplify them and so on.
+
+<table style="text-align:center;" align="center">
+	<colgroup>
+	<col span="3">
+	</colgroup>
+	<tr>
+	<th><img src="gudhui_so3_points.png"></th>
+	<th><img src="gudhui_rips.jpg"></th>
+	<th><img src="gudhui_simplified.png"></th>
+	</tr>
+	<tr>
+	<td>
+		10000 points in R^9 (e.g. rotational matrices) that samples regularly SO(3).
+		They are projected into R^3 for vizualization. Note that there projection is a sphere in R^3.
+	</td>
+	<td>
+		Rips complex built uppon these points. It has over 230 millions of simplices and the dimension of the mesh is 12.
+	</td>
+	<td>
+		Complex obtained after homotopy-preserving simplification (took 2 second on 2.5Ghz single core). It has only 16 vertices and very few simplices. Computing topological invariant such as betti numbers of homology group is then very fast.
+	</td>
+	</tr>
+</table>
+
+	<ul>
+	  <li><h4>
+		Language: c++11
+	  </h4></li>
+	  <li><h4>
+		Source code : available in Gudhi development branch.
+		<a href="http://gudhi.gforge.inria.fr/doc/1.3.0/">Gudhi webpage.</a>
+	  </h4></li>
+	  <li><h4>
+		Binary : 
+		<a href="http://www-sop.inria.fr/members/David.Salinas/downloads/gudhui.zip">.exe</a>
+	  </h4></li>
+	  <li><h4>
+		Dependencies : boost, Qt4, QGLViewer, CGAL 4.5, Gudhi.
+	  </h4></li>
+	</ul>
+	
+</div>
+
+<h3>
+	Settlers of Catan
+</h3>
+
+	<div>
+	This is an implementation of the board game settlers of catan. This is more a proof of concept, other implementations are publicly available as well.
+
+<p style="text-align:center;"><img src="settlers.png"></p>
+
+  <ul>
+      <li><h4>
+		Language: Java
+      </h4></li>
+	  <li><h4>
+		Source code : available in <a href="https://github.com/geoalgo/voronoiSettlers">github</a>
+      </h4></li>
+  </ul>
+	</div>
